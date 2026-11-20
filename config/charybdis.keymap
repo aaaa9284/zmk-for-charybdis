@@ -106,19 +106,19 @@
 
         layer_1 {
             bindings = <
-&kp F1          &kp F2           &kp F3           &kp F4           &kp F5           &kp F6        &kp F7     &kp F8  &kp F9  &kp F10  &kp F11           &kp F12
-&kp CAPS        &none            &none            &none            &none            &none         &none      &none   &none   &none    &none             &kp BACKSLASH
-&kp LEFT_SHIFT  &none            &none            &none            &bt BT_NXT       &bt BT_CLR    &none      &none   &none   &none    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&kp LCTRL       &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &none         &none      &none   &none   &none    &none             &kp EQUAL
-                                                  &kp LEFT_ALT     &kp SPACE        &to 0         &none      &none
+&kp F1          &kp F2           &kp F3           &kp F4           &kp F5           &kp F6        &kp F7       &kp F8         &kp F9  &kp F10  &kp F11           &kp F12
+&kp CAPS        &none            &none            &none            &none            &none         &none        &none          &none   &none    &none             &kp BACKSLASH
+&kp LEFT_SHIFT  &none            &none            &none            &bt BT_NXT       &bt BT_CLR    &none        &none          &none   &none    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp LCTRL       &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &none         &none        &none          &none   &none    &none             &kp EQUAL
+                                                  &kp HOME         &kp END          &mo 1         &kp PAGE_UP  &kp PAGE_DOWN
                                                                    &mkp MB1         &mkp MB2      &kp ENTER
             >;
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                //<&inc_dec_kp A B>;,,
-                //<&scroll_vertical_encoder>,,,
-                // 编码器1：上下滚动,,,,
+                //<&inc_dec_kp A B>;,,,
+                //<&scroll_vertical_encoder>,,,,
+                // 编码器1：上下滚动,,,,,
                 <&scroll_horizontal_encoder>;
         };
 
@@ -134,9 +134,9 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                //<&inc_dec_kp A B>;,,
-                //<&scroll_vertical_encoder>,,,
-                // 编码器1：上下滚动,,,,
+                //<&inc_dec_kp A B>;,,,
+                //<&scroll_vertical_encoder>,,,,
+                // 编码器1：上下滚动,,,,,
                 <&scroll_horizontal_encoder>;
         };
 
