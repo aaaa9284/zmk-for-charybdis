@@ -106,18 +106,18 @@
         layer_1 {
             bindings = <
 &kp F1          &kp F2  &kp F3  &kp F4     &kp F5     &kp F6      &kp F7     &kp F8          &kp F9        &kp F10    &kp F11           &kp F12
-&kp TAB         &none   &none   &none      &none      &none       &none      &none           &none         &none      &none             &kp BACKSLASH
+&kp TAB         &none   &none   &none      &none      &none       &none      &none           &none         &none      &kp GRAVE         &kp BACKSLASH
 &kp LEFT_SHIFT  &none   &none   &none      &none      &none       &none      &none           &kp UP_ARROW  &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&kp LCTRL       &none   &none   &none      &none      &none       &none      &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &none             &kp DELETE
+&kp LCTRL       &none   &none   &none      &none      &none       &none      &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp TILDE         &kp DELETE
                                 &kp PG_UP  &kp PG_DN  &mo 1       &kp HOME   &kp END
                                            &mkp MB1   &mkp MB2    &kp ENTER
             >;
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                //<&inc_dec_kp A B>;,,,,,,,,,
-                //<&scroll_vertical_encoder>,,,,,,,,,,
-                // 编码器1：上下滚动,,,,,,,,,,,
+                //<&inc_dec_kp A B>;,,,,,,,,,,
+                //<&scroll_vertical_encoder>,,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
         };
 
@@ -133,9 +133,9 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                //<&inc_dec_kp A B>;,,,,,,,,,
-                //<&scroll_vertical_encoder>,,,,,,,,,,
-                // 编码器1：上下滚动,,,,,,,,,,,
+                //<&inc_dec_kp A B>;,,,,,,,,,,
+                //<&scroll_vertical_encoder>,,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
         };
 
